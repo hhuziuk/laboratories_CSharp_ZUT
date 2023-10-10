@@ -5,45 +5,26 @@
 
     public void Start()
     {
-        if (!isRunning)
-        {
-            Console.WriteLine("Starting the car");
-            isRunning = true;
-        }
-        else
-        {
-            Console.WriteLine("The car is already running");
-        }
+        string message = !isRunning ? "Starting the car" : "The car is already running";
+        Console.WriteLine(message);
+        isRunning = true;
     }
 
     public void Stop()
     {
-        if (isRunning)
-        {
-            Console.WriteLine("Stopping the car");
-            isRunning = false;
-        }
-        else
-        {
-            Console.WriteLine("The car is already stopped");
-        }
+        string message = isRunning ? "Stopping the car" : "The car is already stopped";
+        Console.WriteLine(message);
+        isRunning = isRunning ? false : true;
     }
 
-    public virtual void Refuel()
-    {
-        Console.WriteLine($"Refueling with {fuelType}");
-    }
+    public abstract void Refuel();
 
-    public virtual void Drive()
+    public void Drive()
     {
-        if (isRunning)
-        {
-            Console.WriteLine("Driving with " + fuelType);
-        }
-        else
-        {
-            Console.WriteLine("The car is not running. Start the car first.");
-        }
+        string message = isRunning ? "Driving with " + fuelType : "The car is not running. Start the car first.";
+        Console.WriteLine(message);
+        isRunning = isRunning ? true : false;
+
     }
 }
 
@@ -53,6 +34,10 @@ class GasCar : Car
     {
         fuelType = "gas";
     }
+    public override void Refuel()
+    {
+        Console.WriteLine($"Refueling with {fuelType}");
+    }
 }
 
 class GasolineCar : Car
@@ -60,6 +45,10 @@ class GasolineCar : Car
     public GasolineCar()
     {
         fuelType = "gasoline";
+    }
+    public override void Refuel()
+    {
+        Console.WriteLine($"Refueling with {fuelType}");
     }
 }
 
@@ -72,7 +61,7 @@ class ElectricCar : Car
 
     public override void Refuel()
     {
-        Console.WriteLine("Charging the batteries");
+        Console.WriteLine($"Refueling with {fuelType}");
     }
 }
 
@@ -87,7 +76,7 @@ class Program
         car.Stop();
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
         List<Car> cars = new List<Car>
         {
