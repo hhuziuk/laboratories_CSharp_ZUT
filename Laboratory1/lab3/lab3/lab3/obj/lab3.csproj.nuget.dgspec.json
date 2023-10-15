@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab1/lab3/lab3.csproj": {}
+    "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3/lab3/lab3/lab3.csproj": {}
   },
   "projects": {
-    "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab1/lab3/lab3.csproj": {
+    "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3/lab3/lab3/lab3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab1/lab3/lab3.csproj",
+        "projectUniqueName": "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3/lab3/lab3/lab3.csproj",
         "projectName": "lab3",
-        "projectPath": "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab1/lab3/lab3.csproj",
+        "projectPath": "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3/lab3/lab3/lab3.csproj",
         "packagesPath": "/Users/georgijguzuk/.nuget/packages/",
-        "outputPath": "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab1/lab3/obj/",
+        "outputPath": "/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3/lab3/lab3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/georgijguzuk/.nuget/NuGet/NuGet.Config"

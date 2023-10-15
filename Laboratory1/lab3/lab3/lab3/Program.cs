@@ -1,4 +1,5 @@
-﻿interface CarInterface
+﻿
+interface CarInterface
 {
     void Start();
     void Stop();
