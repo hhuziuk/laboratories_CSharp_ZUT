@@ -159,28 +159,46 @@ class CarBenzineGas : CarInterface, GasCarInterface
     {
         Console.WriteLine(!isGasRefueled ? "Refueling the car with gas" : "Car is already refueled");
         isGasRefueled = true;
-        isBenzineRefueled = true;
     }
 
     public void Drive()
     {
-        if (isRunning && isGasRefueled && isBenzineRefueled)
+        if (isRunning)
         {
-            Console.WriteLine("Driving with both benzine and gas");
-            isGasRefueled = false;
-            isBenzineRefueled = false;
+            if (isGasRefueled && isBenzineRefueled)
+            {
+                Console.WriteLine("Driving with both benzine and gas");
+                isGasRefueled = false;
+                isBenzineRefueled = false;
+            }
+            else if (!isGasRefueled && isBenzineRefueled)
+            {
+                Console.WriteLine("Gas is finished. Driving with benzine.");
+                isBenzineRefueled = false;
+            }
+            else if (isGasRefueled && !isBenzineRefueled)
+            {
+                Console.WriteLine("Benzine is finished. Driving with gas.");
+                isGasRefueled = false;
+            }
+            else
+            {
+                Console.WriteLine("Gas and benzine are finished. Please refuel.");
+            }
         }
-        else if (!isRunning)
-            Console.WriteLine("Car is not running");
         else
-            Console.WriteLine("Gas or benzine is finished. Please refuel.");
+        {
+            Console.WriteLine("Car is not running");
+        }
     }
 
     public void RefuelGas()
     {
-        Refuel();
+        Console.WriteLine(!isGasRefueled ? "Refueling the car with gas" : "Car is already refueled");
+        isGasRefueled = true;
     }
 }
+
 
 class CarBenzineElectric : CarInterface, ElectricCarInterface
 {
@@ -204,28 +222,48 @@ class CarBenzineElectric : CarInterface, ElectricCarInterface
     {
         Console.WriteLine(!isBenzineRefueled ? "Refueling the car with benzine" : "Car is already refueled");
         isBenzineRefueled = true;
-        isCharged = true;
     }
 
     public void Drive()
     {
-        if (isRunning && isCharged && isBenzineRefueled)
+        if (isRunning)
         {
-            Console.WriteLine("Driving with both electricity and benzine");
-            isCharged = false;
-            isBenzineRefueled = false;
+            if (isCharged && isBenzineRefueled)
+            {
+                Console.WriteLine("Driving with both electricity and benzine");
+                isCharged = false;
+                isBenzineRefueled = false;
+            }
+            else if (!isCharged && isBenzineRefueled)
+            {
+                Console.WriteLine("Electricity is finished. Driving with benzine.");
+                isBenzineRefueled = false;
+            }
+            else if (isCharged && !isBenzineRefueled)
+            {
+                Console.WriteLine("Benzine is finished. Driving with electricity.");
+                isCharged = false;
+            }
+            else
+            {
+                Console.WriteLine("Electricity and benzine are finished. Please refuel or recharge.");
+            }
         }
-        else if (!isRunning)
-            Console.WriteLine("Car is not running");
         else
-            Console.WriteLine("Electricity or benzine is finished. Please refuel or recharge.");
+        {
+            Console.WriteLine("Car is not running");
+        }
     }
 
     public void Recharge()
     {
-        Refuel();
+        Console.WriteLine(!isCharged ? "Recharging the car with electricity" : "Car is already charged");
+        isCharged = true;
     }
 }
+
+
+
 
 class Program
 {
@@ -249,10 +287,10 @@ class Program
         CarElectric carElectric = new CarElectric();
         CarBenzineGas carBenzineGas = new CarBenzineGas();
         CarBenzineElectric carBenzineElectric = new CarBenzineElectric();
-        TestDrive(carBenzine);
-        TestDrive(carGas);
-        TestDrive(carElectric);
+        // TestDrive(carBenzine);
+        // TestDrive(carGas);
+        // TestDrive(carElectric);
         TestDrive(carBenzineGas);
-        TestDrive(carBenzineElectric);
+        //TestDrive(carBenzineElectric);
     }
 }
