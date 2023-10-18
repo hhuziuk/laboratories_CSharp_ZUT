@@ -72,8 +72,7 @@ class CarGas : CarInterface, GasCarInterface
 
     public void Refuel()
     {
-        Console.WriteLine(!isGasRefueled ? "Refueling the car with gas" : "Car is already refueled");
-        isGasRefueled = true;
+        RefuelGas();
     }
 
     public void Drive()
@@ -91,7 +90,8 @@ class CarGas : CarInterface, GasCarInterface
 
     public void RefuelGas()
     {
-        Refuel();
+        Console.WriteLine(!isGasRefueled ? "Refueling the car with gas" : "Car is already refueled");
+        isGasRefueled = true;
     }
 }
 
@@ -114,8 +114,7 @@ class CarElectric : CarInterface, ElectricCarInterface
 
     public void Refuel()
     {
-        Console.WriteLine(!isCharged ? "Charging the car" : "Car is already charged");
-        isCharged = true;
+        Recharge();
     }
 
     public void Drive()
@@ -133,7 +132,8 @@ class CarElectric : CarInterface, ElectricCarInterface
 
     public void Recharge()
     {
-        Refuel();
+        Console.WriteLine(!isCharged ? "Charging the car" : "Car is already charged");
+        isCharged = true;
     }
 }
 
@@ -155,10 +155,16 @@ class CarBenzineGas : CarInterface, GasCarInterface
         isRunning = false;
     }
 
+    public void RefuelBenzine()
+    {
+        Console.WriteLine(!isBenzineRefueled ? "Refueling the car with benzine" : "Car is already refueled");
+        isBenzineRefueled = true;
+    }
+    
     public void Refuel()
     {
-        Console.WriteLine(!isGasRefueled ? "Refueling the car with gas" : "Car is already refueled");
-        isGasRefueled = true;
+        RefuelBenzine();
+        RefuelGas();
     }
 
     public void Drive()
@@ -218,12 +224,18 @@ class CarBenzineElectric : CarInterface, ElectricCarInterface
         isRunning = false;
     }
 
-    public void Refuel()
+    public void RefuelBenzine()
     {
         Console.WriteLine(!isBenzineRefueled ? "Refueling the car with benzine" : "Car is already refueled");
         isBenzineRefueled = true;
     }
 
+    public void Refuel()
+    {
+        RefuelBenzine();
+        Recharge();
+    }
+    
     public void Drive()
     {
         if (isRunning)
@@ -262,9 +274,6 @@ class CarBenzineElectric : CarInterface, ElectricCarInterface
     }
 }
 
-
-
-
 class Program
 {
     static void TestDrive(CarInterface car)
@@ -287,10 +296,10 @@ class Program
         CarElectric carElectric = new CarElectric();
         CarBenzineGas carBenzineGas = new CarBenzineGas();
         CarBenzineElectric carBenzineElectric = new CarBenzineElectric();
-        // TestDrive(carBenzine);
-        // TestDrive(carGas);
-        // TestDrive(carElectric);
+        TestDrive(carBenzine);
+        TestDrive(carGas);
+        TestDrive(carElectric);
         TestDrive(carBenzineGas);
-        //TestDrive(carBenzineElectric);
+        TestDrive(carBenzineElectric);
     }
 }
