@@ -1,0 +1,15 @@
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/lab3b.csproj.AssemblyReference.cache
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/lab3b.GeneratedMSBuildEditorConfig.editorconfig
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/lab3b.AssemblyInfoInputs.cache
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/lab3b.AssemblyInfo.cs
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/lab3b.csproj.CoreCompileInputs.cache
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/bin/Debug/net7.0/lab3b
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/bin/Debug/net7.0/lab3b.deps.json
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/bin/Debug/net7.0/lab3b.runtimeconfig.json
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/bin/Debug/net7.0/lab3b.dll
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/bin/Debug/net7.0/lab3b.pdb
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/lab3b.dll
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/refint/lab3b.dll
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/lab3b.pdb
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/lab3b.genruntimeconfig.cache
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab3b/lab3b/obj/Debug/net7.0/ref/lab3b.dll
