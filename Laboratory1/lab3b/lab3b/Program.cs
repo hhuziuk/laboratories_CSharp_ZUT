@@ -289,7 +289,7 @@ class CarGasolineGas : ICar, ICarGas, ICarGasoline
     }
 }
 
-class CarGasolineElectric : ICar, ICarElectric, ICarGasoline
+class CarGasolineElectric : ICarElectric, ICarGasoline
 {
     public bool ElectricEngine { get; set; }
     public bool Battery { get; set; }
@@ -298,24 +298,24 @@ class CarGasolineElectric : ICar, ICarElectric, ICarGasoline
 
     public void Start()
     {
-        if (!ElectricEngine)
+        if (!ElectricEngine && !GasEngine)
         {
             Console.WriteLine("Starting the electric engine");
             ElectricEngine = true;
         }
-        else
+        else if (!ElectricEngine && GasEngine)
         {
-            Console.WriteLine("The engine is already running");
+            Console.WriteLine("Starting the electric engine");
+            ElectricEngine = true;
         }
-
-        if (!GasEngine)
+        else if (ElectricEngine && !GasEngine)
         {
             Console.WriteLine("Starting the gasoline engine");
             GasEngine = true;
         }
         else
         {
-            Console.WriteLine("The engine is already running");
+            Console.WriteLine("Both engines are already running");
         }
     }
 
@@ -326,19 +326,10 @@ class CarGasolineElectric : ICar, ICarElectric, ICarGasoline
             Console.WriteLine("Stopping the electric engine");
             ElectricEngine = false;
         }
-        else
-        {
-            Console.WriteLine("The engine is already stopped");
-        }
-
         if (GasEngine)
         {
             Console.WriteLine("Stopping the gasoline engine");
             GasEngine = false;
-        }
-        else
-        {
-            Console.WriteLine("The engine is already stopped");
         }
     }
 
@@ -349,9 +340,10 @@ class CarGasolineElectric : ICar, ICarElectric, ICarGasoline
             Console.WriteLine("Refueling the car with gasoline");
             Tank = true;
         }
-        else
+        if (!Battery)
         {
-            Console.WriteLine("The car is already refueled");
+            Console.WriteLine("Refueling the car with electricity");
+            Battery = true;
         }
     }
 
@@ -380,12 +372,26 @@ class CarGasolineElectric : ICar, ICarElectric, ICarGasoline
                 Console.WriteLine("Electricity and gasoline are finished. Please refuel or recharge.");
             }
         }
+        else if (GasEngine)
+        {
+            if (Tank)
+            {
+                Console.WriteLine("Driving with gasoline");
+                Tank = false;
+            }
+            else
+            {
+                Console.WriteLine("Gasoline is finished. Please refuel.");
+            }
+        }
         else
         {
-            Console.WriteLine("Car engine is not running");
+            Console.WriteLine("Car engines are not running");
         }
     }
 }
+
+
 
 class Program
 {
@@ -395,24 +401,21 @@ class Program
         car.Refuel();
         car.Drive();
         car.Start();
-        car.Start();
-        car.Drive();
-        car.Drive();
-        car.Stop();
         car.Stop();
     }
 
     static void Main()
     {
-        CarGasoline gasolineCar = new CarGasoline();
-        CarGas gasCar = new CarGas();
-        CarElectric electricCar = new CarElectric();
-        CarGasolineGas gasolineGasCar = new CarGasolineGas();
-        CarGasolineElectric gasolineElectricCar = new CarGasolineElectric();
-        // TestDrive(gasolineCar);
-        // TestDrive(gasCar);
-        // TestDrive(electricCar);
-        // TestDrive(gasolineGasCar);
-        TestDrive(gasolineElectricCar);
+        ICar gasolineCar = new CarGasoline();
+        ICar electricCar = new CarElectric();
+        ICar gasolineGasCar = new CarGasolineGas();
+        ICar gasolineElectricCar = new CarGasolineElectric();
+
+        gasolineElectricCar.Start();
+        //((ICar)gasolineElectricCar).Start();
+        ((ICarGas)gasolineGasCar).Start();
+        ((ICarGasoline)gasolineGasCar).Start();
+
+            //TestDrive(gasolineElectricCar);
     }
 }
