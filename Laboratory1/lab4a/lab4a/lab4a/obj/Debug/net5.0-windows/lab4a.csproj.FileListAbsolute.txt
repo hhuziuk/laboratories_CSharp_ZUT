@@ -16,3 +16,4 @@ C:\Users\hh53872\source\repos\laboratories_CSharp_ZUT\Laboratory1\lab4a\lab4a\la
 C:\Users\hh53872\source\repos\laboratories_CSharp_ZUT\Laboratory1\lab4a\lab4a\lab4a\obj\Debug\net5.0-windows\ref\lab4a.dll
 C:\Users\hh53872\source\repos\laboratories_CSharp_ZUT\Laboratory1\lab4a\lab4a\lab4a\obj\Debug\net5.0-windows\lab4a.pdb
 C:\Users\hh53872\source\repos\laboratories_CSharp_ZUT\Laboratory1\lab4a\lab4a\lab4a\obj\Debug\net5.0-windows\lab4a.genruntimeconfig.cache
+C:\Users\hh53872\source\repos\laboratories_CSharp_ZUT\Laboratory1\lab4a\lab4a\lab4a\obj\Debug\net5.0-windows\lab4a2.Form1.resources
