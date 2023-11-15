@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Laboratory1",
+    "\\Laboratory1\\lab4b_1",
+    "\\Laboratory1\\lab4b_1\\lab4b_1"
   ],
+  "SelectedNode": "\\Laboratory1\\lab4b_1\\lab4b_1\\Form1.Designer.cs",
   "PreviewInSolutionExplorer": false
 }
