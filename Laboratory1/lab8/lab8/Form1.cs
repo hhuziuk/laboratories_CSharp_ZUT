@@ -16,7 +16,7 @@ namespace lab8
         public Form1()
         {
             InitializeComponent();
-            customTimer = new CustomTimer(10000); 
+            customTimer = new CustomTimer(5000); 
             customTimer.timeElapsed += CustomTimer_TimeElapsed;
             customTimer.onError += CustomTimer_OnError;
         }
