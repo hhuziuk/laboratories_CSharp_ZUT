@@ -1,0 +1,15 @@
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/bin/Debug/net7.0/lab09Console
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/bin/Debug/net7.0/lab09Console.deps.json
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/bin/Debug/net7.0/lab09Console.runtimeconfig.json
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/bin/Debug/net7.0/lab09Console.dll
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/bin/Debug/net7.0/lab09Console.pdb
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/lab09Console.csproj.AssemblyReference.cache
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/lab09Console.GeneratedMSBuildEditorConfig.editorconfig
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/lab09Console.AssemblyInfoInputs.cache
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/lab09Console.AssemblyInfo.cs
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/lab09Console.csproj.CoreCompileInputs.cache
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/lab09Console.dll
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/refint/lab09Console.dll
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/lab09Console.pdb
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/lab09Console.genruntimeconfig.cache
+/Users/georgijguzuk/RiderProjects/laboratories_CSharp_ZUT/Laboratory1/lab09Console/lab09Console/obj/Debug/net7.0/ref/lab09Console.dll
