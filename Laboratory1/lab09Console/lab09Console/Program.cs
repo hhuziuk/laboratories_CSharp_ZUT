@@ -133,7 +133,7 @@ namespace CustomLibrary
 
         static void Main(string[] args)
         {
-            var customTimer = new CustomTimer(10000);
+            var customTimer = new CustomTimer(100000);
             customTimer.timeElapsed += TimerElapsedHandler;
             customTimer.Start();
 
@@ -161,7 +161,7 @@ namespace CustomLibrary
             customBackgroundWorker.ProgressChanged += MatrixWorker_ProgressChanged;
             customBackgroundWorker.Completion += MatrixWorker_Completion;
 
-            Console.Write("Matrix Multiplication Progress: ");
+            Console.Write("Matrix Multiplication Progress: \n");
 
             customBackgroundWorker.RunWorkerAsync();
 
