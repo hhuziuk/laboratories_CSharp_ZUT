@@ -1,0 +1,12 @@
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\bin\Debug\net5.0\CMH.deps.json
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\bin\Debug\net5.0\CMH.dll
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\bin\Debug\net5.0\ref\CMH.dll
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\bin\Debug\net5.0\CMH.pdb
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\obj\Debug\net5.0\CMH.csproj.AssemblyReference.cache
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\obj\Debug\net5.0\CMH.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\obj\Debug\net5.0\CMH.AssemblyInfoInputs.cache
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\obj\Debug\net5.0\CMH.AssemblyInfo.cs
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\obj\Debug\net5.0\CMH.csproj.CoreCompileInputs.cache
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\obj\Debug\net5.0\CMH.dll
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\obj\Debug\net5.0\ref\CMH.dll
+C:\Users\hh53872\source\repos\09Aaaaaaa\CMH\obj\Debug\net5.0\CMH.pdb
