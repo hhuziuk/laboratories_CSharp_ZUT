@@ -47,9 +47,6 @@ namespace lab8
             InitializeMatrices();
 
             await Task.Run(() => MultiplyMatrices(matrixA, matrixB, resultMatrix));
-
-
-
             MessageBox.Show("Matrix Multiplication was done");
         }
 
@@ -100,5 +97,6 @@ namespace lab8
                 }
             }
         }
+
     }
 }
